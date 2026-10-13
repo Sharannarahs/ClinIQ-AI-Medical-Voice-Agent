@@ -34,26 +34,7 @@ After the consultation, Gemini AI generates a report summarizing the discussion,
 
 ## Architecture Diagram
 
-```mermaid
-flowchart TD
-    A[User] --> B[Clerk Login]
-    B --> C[Next.js Dashboard]
-    C --> D[Enter Symptoms]
-    D --> E[Backend Function]
-    E --> F[Gemini AI + Medical Agent Prompts]
-    F --> G[Suggested Specialists]
-    G --> H[Select Specialist]
-    H --> I[Save Selection and Create UUID Session]
-    I --> J[(Database via Drizzle ORM)]
-    I --> K[Dedicated Consultation Page]
-    K --> L[Vapi AI Voice Agent]
-    L <--> M[Real-Time Voice Conversation]
-    M --> N[Consultation Transcript / Details]
-    N --> O[Gemini AI Report Generation]
-    O --> J
-    J --> P[Consultation Report]
-    P --> C
-```
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/a7a2ecf0-1661-4f95-9aaa-1eb95374d481" />
 
 ## How It Works
 
